@@ -8,13 +8,13 @@ Simple and lightweight HTML to text conversion using NodeJs.
 ## Installation
 
 ````
-npm install html2pdf
+npm install @sagar.modhvaniya/html2pdf
 ````
 
 ## Conversion API
 The API exposes a single function 'convertPdf'. Using this function, you can input a multitude of settings, which are further specified below:
 ```` javascript
-var pdf = require('html2pdf');
+var pdf = require('@sagar.modhvaniya/html2pdf');
 
 convertPdf(options).then((pdfPath)=>{
 	/* return new created pdf path */
@@ -133,7 +133,7 @@ const htmlString = `<html>
 ```
 - Final code
 ```javascript
-var pdf = require('html2pdf');
+var pdf = require('@sagar.modhvaniya/html2pdf');
 const companyData = {
     employees: [
         {
