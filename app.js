@@ -58,4 +58,3 @@ async function convertPdf({htmlString, inputJson, filePath, fileName, externalCs
 module.exports = {
     convertPdf,
 }
-

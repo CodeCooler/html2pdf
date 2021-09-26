@@ -16,7 +16,7 @@ The API exposes a single function 'convertPdf'. Using this function, you can inp
 ```` javascript
 var pdf = require('@sagar.modhvaniya/html2pdf');
 
-convertPdf(options).then((pdfPath)=>{
+pdf.convertPdf(options).then((pdfPath)=>{
 	/* return new created pdf path */
 
 }).catch((error)=>{
@@ -36,9 +36,9 @@ Calling convert() requires an options object, which includes the following defin
 	"inputJson" : "JSON data to make dynamic string",
 	"filePath" : "Path to save file",
 	"fileName" : "Pdf file name",
-	"displayHeaderFooter" : true or false If you want to add header or footer in pdf,
-        "headerTemplate": HTML string for header,
-        "footerTemplate": HTML string for footer
+	"displayHeaderFooter" :" true or false If you want to add header or footer in pdf",
+        "headerTemplate": "HTML string for header",
+        "footerTemplate": "HTML string for footer"
 }
 ````
 
@@ -47,34 +47,34 @@ Calling convert() requires an options object, which includes the following defin
 - JSON data which I need to show in table
 ```JSON
 {
-    employees: [
+    "employees": [
         {
-            firstName: "John",
-            lastName: "Smith",
-            email: "jsmith@gmail.com",
-            due: "50",
-            website: "http://www.jsmith.com"
+            "firstName": "John",
+            "lastName": "Smith",
+            "email": "jsmith@gmail.com",
+            "due": "50",
+            "website": "http://www.jsmith.com"
         },
         {
-            firstName: "Frank",
-            lastName: "Bach",
-            email: "fbach@yahoo.com",
-            due: "50",
-            website: "http://www.frank.com"
+            "firstName": "Frank",
+            "lastName": "Bach",
+            "email": "fbach@yahoo.com",
+            "due": "50",
+            "website": "http://www.frank.com"
         },
         {
-            firstName: "Jason",
-            lastName: "Doe",
-            email: "jdoe@hotmail.com",
-            due: "100",
-            website: "http://www.jdoe.com"
+            "firstName": "Jason",
+            "lastName": "Doe",
+            "email": "jdoe@hotmail.com",
+            "due": "100",
+            "website": "http://www.jdoe.com"
         },
         {
-            firstName: "Tim",
-            lastName: "Conway",
-            email: "tconway@earthlink.net",
-            due: "50",
-            website: "http://www.timconway.com"
+            "firstName": "Tim",
+            "lastName": "Conway",
+            "email": "tconway@earthlink.net",
+            "due": "50",
+            "website": "http://www.timconway.com"
         }
     ]
 }
@@ -135,34 +135,34 @@ const htmlString = `<html>
 ```javascript
 var pdf = require('@sagar.modhvaniya/html2pdf');
 const companyData = {
-    employees: [
+    "employees": [
         {
-            firstName: "John",
-            lastName: "Smith",
-            email: "jsmith@gmail.com",
-            due: "50",
-            website: "http://www.jsmith.com"
+            "firstName": "John",
+            "lastName": "Smith",
+            "email": "jsmith@gmail.com",
+            "due": "50",
+            "website": "http://www.jsmith.com"
         },
         {
-            firstName: "Frank",
-            lastName: "Bach",
-            email: "fbach@yahoo.com",
-            due: "50",
-            website: "http://www.frank.com"
+            "firstName": "Frank",
+            "lastName": "Bach",
+            "email": "fbach@yahoo.com",
+            "due": "50",
+            "website": "http://www.frank.com"
         },
         {
-            firstName: "Jason",
-            lastName: "Doe",
+            "firstName": "Jason",
+            "lastName": "Doe",
             email: "jdoe@hotmail.com",
-            due: "100",
-            website: "http://www.jdoe.com"
+            "due": "100",
+            "website": "http://www.jdoe.com"
         },
         {
-            firstName: "Tim",
-            lastName: "Conway",
-            email: "tconway@earthlink.net",
-            due: "50",
-            website: "http://www.timconway.com"
+            "firstName": "Tim",
+            "lastName": "Conway",
+            "email": "tconway@earthlink.net",
+            "due": "50",
+            "website": "http://www.timconway.com"
         }
     ]
 }
@@ -178,7 +178,7 @@ var options = {
     footerTemplate:null
  };
 
-convertPdf(options).then((pdfPath)=>{
+pdf.convertPdf(options).then((pdfPath)=>{
 	/* return new created pdf path */
     console.log(pdfPath)
 }).catch((error)=>{
