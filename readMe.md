@@ -8,7 +8,7 @@ Simple and lightweight HTML to text conversion using NodeJs.
 ## Installation
 
 ````
-npm install phantom-html2pdf
+npm install html2pdf
 ````
 
 ## Conversion API
