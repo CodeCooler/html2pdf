@@ -1,17 +1,33 @@
 {
-  "name": "html2pdf",
-  "version": "0.0.1",
-  "description": "",
-  "main": "index.js",
+  "name": "@sagar.modhvaniya/html2pdf",
+  "version": "1.0.0",
+  "description": "Convert HTML string into pdf",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "app.js"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "main": "app.js",
+  "keywords": [
+    "html-to-pdf",
+    "pdf convert",
+    "html css pdf",
+    "html",
+    "css",
+    "interactive pdf from HTML",
+    "HTML",
+    "liquidjs",
+    "chat",
+    "puppeteer"
+  ],
   "dependencies": {
     "liquidjs": "^9.25.1",
     "puppeteer": "^10.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:sagarmodhvaniya/html2pdf.git"
+  },
+
+  "author": "Sagar Modhvaniya <sagar.modhvaniya@hotmail.com>",
+  "license": "GPL-3.0",
+  "homepage": "https://github.com/sagarmodhvaniya/html2pdf#readme"
 }

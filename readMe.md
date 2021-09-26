@@ -36,7 +36,7 @@ Calling convert() requires an options object, which includes the following defin
 	"inputJson" : "JSON data to make dynamic string",
 	"filePath" : "Path to save file",
 	"fileName" : "Pdf file name",
-	"displayHeaderFooter" : true/false If you want to add header or footer in pdf,
+	"displayHeaderFooter" : true or false If you want to add header or footer in pdf,
         "headerTemplate": HTML string for header,
         "footerTemplate": HTML string for footer
 }
@@ -46,7 +46,7 @@ Calling convert() requires an options object, which includes the following defin
 ## Code example
 - JSON data which I need to show in table
 ```JSON
-const companyData = {
+{
     employees: [
         {
             firstName: "John",
@@ -118,11 +118,11 @@ const htmlString = `<html>
                         <tbody>
                         {% for employee in employees %}
                         <tr>
-                            <td> {{ product.lastName }}</td>
-                            <td> {{ product.firstName }}</td>
-                            <td> {{ product.email }}</td>
-                            <td> {{ product.due }}</td>
-                            <td> {{ product.website }}</td>
+                            <td> {{ employee.lastName }}</td>
+                            <td> {{ employee.firstName }}</td>
+                            <td> {{ employee.email }}</td>
+                            <td> {{ employee.due }}</td>
+                            <td> {{ employee.website }}</td>
                         </tr>
                         {% endfor %}
                         </tbody>
