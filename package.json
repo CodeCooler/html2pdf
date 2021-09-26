@@ -1,0 +1,17 @@
+{
+  "name": "html2pdf",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "liquidjs": "^9.25.1",
+    "puppeteer": "^10.4.0"
+  }
+}
