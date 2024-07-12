@@ -7,6 +7,7 @@ Simple and lightweight HTML to text conversion using NodeJs.
 
 ## Installation
 
+# Don't. This is for internal testing purposes only. Not safe for human consumption.
 ````
 npm install @sagar.modhvaniya/html2pdf
 ````
