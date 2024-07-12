@@ -8,9 +8,7 @@ Simple and lightweight HTML to text conversion using NodeJs.
 ## Installation
 
 # Don't. This is for internal testing purposes only. Not safe for human consumption.
-````
-npm install @sagar.modhvaniya/html2pdf
-````
+
 
 ## Conversion API
 The API exposes a single function 'convertPdf'. Using this function, you can input a multitude of settings, which are further specified below:
