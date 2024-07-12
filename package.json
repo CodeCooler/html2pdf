@@ -19,8 +19,8 @@
     "puppeteer"
   ],
   "dependencies": {
-    "liquidjs": "^9.25.1",
-    "puppeteer": "^10.4.0"
+    "liquidjs": "^10.15.0",
+    "puppeteer": "^22.13.0"
   },
   "repository": {
     "type": "git",
