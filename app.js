@@ -11,6 +11,7 @@ async function convertPdf({htmlString, inputJson, filePath, fileName, externalCs
         // launch a new chrome instance
         const browser = await puppeteer.launch({
             headless: true,
+             args:['--no-sandbox']
         });
         // create a new page
         const page = await browser.newPage();
